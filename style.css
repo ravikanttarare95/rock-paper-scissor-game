@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #f1efec;
+}
+
+.btn {
+  padding: 5px 20px;
+  border-radius: 5px;
+  border: none;
+  font-size: 14px;
+  box-shadow: 1px 1px 10px #000000, -1px -1px 10px #ffffff;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #123458;
+  color: #fff;
+}
+
+.btn-secondary {
+  background-color: #b30000;
+  color: #fff;
+}
+
+.main-container {
+  margin: 65px;
+}
+
+.game-container {
+  margin: 0 auto;
+  max-width: 600px;
+  background-color: #d4c9be;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 2px 10px #d1d1e0, -2px -2px 10px #d1d1e0;
+  gap: 70px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.players-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.player-box {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 150px;
+  text-align: center;
+  background: #fff;
+}
+
+#result-message {
+  text-align: center;
+  font-size: 20px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-around;
+}
