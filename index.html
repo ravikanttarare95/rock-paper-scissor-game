@@ -9,35 +9,35 @@
 </head>
 
 <body>
-    <div class="main-container">
-        <div class="game-container">
-            <h1>Rock Paper Scissor</h1>
-            <div class="players-container">
-                <div class="player-box">
-                    <h2 class="h-player">Human</h2>
-                    <p id="h-score">0</p>
-                    <p id="h-choice">choice</p>
-                </div>
 
-                <button class="btn btn-secondary">Reset</button>
-
-                <div class="player-box">
-                    <h2 class="h-player">Computer</h2>
-                    <p id="c-score">0</p>
-                    <p id="h-choice">choice</p>
-                </div>
-
+    <div class="game-container">
+        <h1>Rock Paper Scissor</h1>
+        <div class="players-container">
+            <div class="player-box">
+                <h2 class="h-player">Human</h2>
+                <p id="h-score">0</p>
+                <p id="h-choice">choice</p>
             </div>
 
-            <p id="result-message">Result</p>
+            <button class="btn btn-secondary">Reset</button>
 
-            <div class="button-container">
-                <button class="btn btn-primary">Rock</button>
-                <button class="btn btn-primary">paper</button>
-                <button class="btn btn-primary">Scissor</button>
+            <div class="player-box">
+                <h2 class="h-player">Computer</h2>
+                <p id="c-score">0</p>
+                <p id="c-choice">choice</p>
             </div>
+
+        </div>
+
+        <p id="result-message">Result</p>
+
+        <div class="button-container">
+            <button class="btn btn-primary" onclick="playRock()">Rock</button>
+            <button class="btn btn-primary" onclick="playPaper()">Paper</button>
+            <button class="btn btn-primary" onclick="playScissor()">Scissor</button>
         </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 

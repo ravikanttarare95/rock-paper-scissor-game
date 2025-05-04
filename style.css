@@ -5,7 +5,9 @@
 }
 
 body {
-  background-color: #f1efec;
+  background-color: #6b8f94;
+  padding: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .btn {
@@ -13,39 +15,46 @@ body {
   border-radius: 5px;
   border: none;
   font-size: 14px;
-  box-shadow: 1px 1px 10px #000000, -1px -1px 10px #ffffff;
+  box-shadow: 0.5px 0.5px 0 #000000, inset -1px -1px 1px #f7b8b8;
   cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.btn:hover {
+  box-shadow: 1px 1px 2px 0 #000000, -1px -1px 2px 0 #ffffff;
+}
+
+.btn:active {
+  transform: scale(0.96);
 }
 
 .btn-primary {
-  background-color: #123458;
+  background-color: #3f2f25;
   color: #fff;
 }
 
 .btn-secondary {
-  background-color: #b30000;
+  background-color: #ec255a;
   color: #fff;
 }
 
-.main-container {
-  margin: 65px;
-}
-
 .game-container {
-  margin: 0 auto;
+  margin: 20px auto;
   max-width: 600px;
   background-color: #d4c9be;
   padding: 20px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  box-shadow: 2px 2px 10px #d1d1e0, -2px -2px 10px #d1d1e0;
+  box-shadow: inset 1px 1px 5px 0 #655858, inset -1px 0 5px 0 #655858,
+    0 3px 2px 0 #3d3b3b;
   gap: 70px;
 }
 
 h1 {
   text-align: center;
   margin-bottom: 40px;
+  color: #013136;
 }
 
 .players-container {
@@ -64,11 +73,14 @@ h1 {
   width: 150px;
   text-align: center;
   background: #fff;
+  color: #003237;
 }
 
 #result-message {
   text-align: center;
   font-size: 20px;
+  color: grey;
+  font-weight: bold;
 }
 
 .button-container {
