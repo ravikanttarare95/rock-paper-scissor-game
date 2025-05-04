@@ -7,7 +7,7 @@
 body {
   background-color: #6b8f94;
   padding: 20px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 .btn {
@@ -41,7 +41,7 @@ body {
 .game-container {
   margin: 20px auto;
   max-width: 600px;
-  background-color: #d4c9be;
+  background-color: #fff;
   padding: 20px;
   border-radius: 10px;
   display: flex;
@@ -64,16 +64,21 @@ h1 {
 }
 
 .player-box {
-  border: 1px solid black;
+  border: 2px solid black;
   border-radius: 10px;
   padding: 10px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 30px;
   width: 150px;
   text-align: center;
-  background: #fff;
+  background-color: #f1ede8;
   color: #003237;
+}
+
+.player-box img {
+  width: 50px;
 }
 
 #result-message {

@@ -15,19 +15,19 @@ const result = document.getElementById("result-message");
 // }
 
 function playRock() {
-  humanChoice.innerText = "Rock";
+  humanChoice.src = "./images/rock.png";
   computerGame();
   gameResult();
 }
 
 function playPaper() {
-  humanChoice.innerText = "Paper";
+  humanChoice.src = "./images/paper.png";
   computerGame();
   gameResult();
 }
 
 function playScissor() {
-  humanChoice.innerText = "Scissor";
+  humanChoice.src = "./images/scissor.png";
   computerGame();
   gameResult();
 }
@@ -37,26 +37,26 @@ function computerGame() {
   max = 3;
   const randomNumber = Math.floor(Math.random() * max - min + 1) + min;
   if (randomNumber === 1) {
-    computerChoice.innerText = "Rock";
+    computerChoice.src = "./images/rock.png";
   } else if (randomNumber === 2) {
-    computerChoice.innerText = "Paper";
+    computerChoice.src = "./images/paper.png";
   } else if (randomNumber === 3) {
-    computerChoice.innerText = "Scissor";
+    computerChoice.src = "./images/scissor.png";
   }
   return randomNumber;
 }
 
 function gameResult() {
-  if (humanChoice.innerText === computerChoice.innerText) {
+  if (humanChoice.src === computerChoice.src) {
     result.innerText = "It's a Tie!";
     result.style.color = "grey";
   } else if (
-    (humanChoice.innerText === "Rock" &&
-      computerChoice.innerText === "Scissor") ||
-    (humanChoice.innerText === "Paper" &&
-      computerChoice.innerText === "Rock") ||
-    (humanChoice.innerText === "Scissor" &&
-      computerChoice.innerText === "Paper")
+    (humanChoice.src.includes("rock.png") &&
+      computerChoice.src.includes("scissor.png")) ||
+    (humanChoice.src.includes("paper.png") &&
+      computerChoice.src.includes("rock.png")) ||
+    (humanChoice.src.includes("scissor.png") &&
+      computerChoice.src.includes("paper.png"))
   ) {
     result.innerText = "You Win!";
     result.style.color = "green";
