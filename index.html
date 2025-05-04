@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        .btn {
+            padding: 5px 20px;
+            border-radius: 5px;
+            border: none;
+            font-size: 14px;
+        }
+
+        .main-container {
+            margin: 200px;
+        }
+
+        .game-container {
+            margin: 0 auto;
+            max-width: 600px;
+            background-color: rgb(185, 217, 246);
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+
+            gap: 70px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .players-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .player-box {
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            width: 150px;
+            text-align: center;
+            background: #fff;
+        }
+
+        #result-message {
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="game-container">
+            <h1>Rock Paper Scissor</h1>
+            <div class="players-container">
+                <div class="player-box">
+                    <h2 class="h-player">Human</h2>
+                    <p id="h-score">0</p>
+                    <p id="h-choice">choice</p>
+                </div>
+
+                <button class="btn">Reset</button>
+
+                <div class="player-box">
+                    <h2 class="h-player">Computer</h2>
+                    <p id="c-score">0</p>
+                    <p id="h-choice">choice</p>
+                </div>
+
+            </div>
+
+            <p id="result-message">Result</p>
+
+            <div class="button-container">
+                <button class="btn">Rock</button>
+                <button class="btn">paper</button>
+                <button class="btn">Scissor</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
