@@ -14,7 +14,7 @@ body {
   padding: 5px 20px;
   border-radius: 5px;
   border: none;
-  font-size: 14px;
+  font-size: 15px;
   box-shadow: 0.5px 0.5px 0 #000000, inset -1px -1px 1px #f7b8b8;
   cursor: pointer;
   transition: all 0.5s ease;
@@ -77,13 +77,17 @@ h1 {
   color: #003237;
 }
 
+.score {
+  font-size: 20px;
+}
+
 .player-box img {
-  width: 50px;
+  width: 45px;
 }
 
 #result-message {
   text-align: center;
-  font-size: 20px;
+  font-size: 25px;
   color: grey;
   font-weight: bold;
 }

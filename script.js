@@ -67,3 +67,12 @@ function gameResult() {
     computerScore.innerText = parseInt(computerScore.innerText) + 1;
   }
 }
+
+function resetGame() {
+  humanScore.innerText = "0";
+  computerScore.innerText = "0";
+  humanChoice.src = "./images/settings.png";
+  computerChoice.src = "./images/settings.png";
+  result.innerText = "Result";
+  result.style.color = "grey";
+}
