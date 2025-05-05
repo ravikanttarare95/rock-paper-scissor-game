@@ -123,11 +123,10 @@ h1 {
   }
 
   h1 {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
 
   .game-container {
-    margin: 0;
     padding: 10px;
     gap: 10px;
   }
@@ -156,5 +155,9 @@ h1 {
 
   .button-container {
     justify-content: space-between;
+  }
+
+  .footer-container {
+    justify-content: center;
   }
 }
