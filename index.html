@@ -19,8 +19,6 @@
                 <img src="./images/settings.png" alt="setting Icon" id="h-choice">
             </div>
 
-            <button class="btn btn-secondary" onclick="resetGame()">Reset</button>
-
             <div class="player-box">
                 <h2 class="h-player">Computer</h2>
                 <p id="c-score" class="score">0</p>
@@ -31,11 +29,19 @@
 
         <p id="result-message">Result</p>
 
-        <div class="button-container">
-            <button class="btn btn-primary" onclick="playRock()">Rock</button>
-            <button class="btn btn-primary" onclick="playPaper()">Paper</button>
-            <button class="btn btn-primary" onclick="playScissor()">Scissor</button>
+        <div class="buttons-container">
+
+            <div class="primary-buttons-container">
+                <button class="btn btn-primary" onclick="playRock()">Rock</button>
+                <button class="btn btn-primary" onclick="playPaper()">Paper</button>
+                <button class="btn btn-primary" onclick="playScissor()">Scissor</button>
+            </div>
+            <div class="secondary-buttons-container">
+                <button class="btn btn-secondary" onclick="resetGame()">Reset</button>
+            </div>
+
         </div>
+
     </div>
     <div class="footer-container">
         Get the source code on <a href="https://github.com/ravikanttarare95/rock-paper-scissor-game"
