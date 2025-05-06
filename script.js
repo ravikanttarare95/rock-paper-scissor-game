@@ -49,7 +49,7 @@ function computerGame() {
 function gameResult() {
   if (humanChoice.src === computerChoice.src) {
     result.innerText = "It's a Tie!";
-    result.style.color = "grey";
+    result.style.color = "#7f8c8d";
   } else if (
     (humanChoice.src.includes("rock.png") &&
       computerChoice.src.includes("scissor.png")) ||
@@ -59,11 +59,11 @@ function gameResult() {
       computerChoice.src.includes("paper.png"))
   ) {
     result.innerText = "You Win!";
-    result.style.color = "green";
+    result.style.color = "#27ae60";
     humanScore.innerText = parseInt(humanScore.innerText) + 1;
   } else {
     result.innerText = "You Lose!";
-    result.style.color = "red";
+    result.style.color = "#c0392b";
     computerScore.innerText = parseInt(computerScore.innerText) + 1;
   }
 }
